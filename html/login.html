@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Account</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/project/js/login.js"></script>
+	<link rel="stylesheet" href="/project/css/styy.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<div class="header">
+		<h1>Ninjaz</h1>
+		<p>King of Mobile Phone Accessories</p>
+	</div>
+	<div class="navbar">
+		<a href="register.html" class="right"><i class="fa fa-plus-circle"></i>     Register</a>
+		<a href="../index.html" class="left">Home</a>
+		<a href="#news" class="left">News</a>
+		<a href="#contact" class="left">Contact</a>
+	</div>
+	<div class="main">
+		<center>
+			<img src="../images/logo.png">
+		</center>
+		<div class="container">
+			<form name="loginForm" action="/project/php/login.php"  onsubmit="return validateLoginForm()" method="post">
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-envelope icon"></i>
+						<label for="femail">Email</label>
+					</div>
+					<div class="col-75">
+						<input type="text" id="idemail" name="email" placeholder="Please key in your email">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-25">
+						<i class="fa fa-key icon"></i>
+						<label for="lname">Password</label>
+					</div>
+					<div class="col-75">
+						<input type="password" id="idpass" name="password" placeholder="Please key in your password">
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="forget">
+						<a style="text-decoration:none;color: white;font-weight: bold" href="../php/forget.php">Forgot password ?</a>
+					</div>
+				</div>
+				<!-- <div class="row">
+					<div class="col-75">
+					<div>
+					<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+					</div>
+					</div>
+				</div> -->
+				<br>
+				<br>
+				<div class="row">
+					<input type="submit" value="Login">
+				</div>
+			</form>
+		</div>
+
+
+	</div>
+
+
+
+</body>
+
+</html>
